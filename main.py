@@ -23,6 +23,8 @@ def main():
 	player = Player(x, y)
 	asteroid_field = AsteroidField()
 	print("Starting Asteroids!")
+	print(f"Screen width: {constants.SCREEN_WIDTH}")
+	print(f"Screen height: {constants.SCREEN_HEIGHT}")
 	screen = pygame.display.set_mode((constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT))
 	while True:
 		for event in pygame.event.get():
